@@ -1,23 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  
+  <title>보험사 배만 불려줄 건가 내 돈 지키는 운전자보험 최저가 비교 사이트 총집결</title>
+
+
+
+  
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "운전자보험과 자동차보험의 차이는 무엇인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "자동차보험은 상대방의 피해를 보상하는 민사 책임 위주이며, 운전자보험은 나의 형사적 책임(벌금, 합의금, 변호사비용)을 보장합니다."
+        }
+      }]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #6366f1;
+            --bg-soft: #f8fafc;
+            --text-main: #1e293b;
+            --accent: #f43f5e;
+        }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-soft);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+        .category-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .category-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            font-size: 1.6rem;
+            border-left: 6px solid var(--secondary);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            color: #334155;
+        }
+        .link-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .insurance-item {
+            padding: 15px;
+            border-radius: 12px;
+            background: #f1f5f9;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: block;
+        }
+        .insurance-item:hover {
+            background: #e0e7ff;
+            box-shadow: inset 0 0 0 2px var(--secondary);
+        }
+        .item-title {
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        .item-desc {
+            font-size: 0.9rem;
+            color: #64748b;
+            display: block;
+        }
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #94a3b8;
+            padding-bottom: 40px;
+        }
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="badge">2025 Special Report</span>
+        <h1>보험사 배만 불려줄 건가 내 돈 지키는 운전자보험 최저가 비교 사이트 총집결</h1>
+        <p>도로 위의 예기치 못한 순간, 당신을 법적으로 완벽하게 방어해 줄 최적의 플랜을 만나보세요.</p>
+    </header>
+
+    <div class="category-grid" id="mainContent">
+        </div>
+
+    <footer>
+        <p>© 2026 Smart Driver Insurance Guide. 본 페이지는 정보 제공을 목적으로 하며, 각 상품의 상세 내용은 해당 보험사 약관을 참조하시기 바랍니다.</p>
+    </footer>
+</div>
+
+<script>
+    const rawData = [
+        ["운전자보험 비교사이트", "https://bohumofdrivera.withusdone.com", "복잡한 보장을 한눈에! 내게 꼭 맞는 맞춤형 비교 분석"],
+        ["운전자보험 보장내용", "https://bohumofdriverb.withusdone.com", "단순 치료비를 넘어선 형사적 책임의 모든 것 확인"],
+        ["운전자보험 추천", "https://bohumofdriverc.withusdone.com", "전문가가 선정한 올해의 가장 가성비 높은 안심 플랜"],
+        ["운전자보험 보상", "https://bohumofdriverd.withusdone.com", "사고 발생 시 가장 빠르고 정확하게 받는 보상 가이드"],
+        ["운전자보험 비교", "https://bohumofdrivere.withusdone.com", "보험사별 담보 차이, 이제는 한 곳에서 쉽게 비교하세요"],
+        ["다이렉트 운전자보험", "https://bohumofdriverf.withusdone.com", "설계사 수수료 없이 거품을 뺀 다이렉트만의 경제적 선택"],
+        ["운전자보험이란", "https://bohumofdriverg.withusdone.com", "운전자의 법적 방어권을 보장하는 현대인의 필수 안전장치"],
+        ["운전자보험 자동차보험 차이", "https://bohumofdriverh.withusdone.com", "민사와 형사의 명확한 경계, 왜 둘 다 필요한지 분석"],
+        ["운전자보험 자동차보험", "https://bohumofdriveri.withusdone.com", "두 보험의 완벽한 콜라보레이션으로 빈틈없는 보장 설계"],
+        ["운전자보험 가격", "https://bohumofdriverj.withusdone.com", "월 커피 한 잔 값으로 누리는 강력한 형사적 보호막"],
+        ["운전자보험 자부상", "https://bohumofdriverk.withusdone.com", "경미한 접촉사고도 든든하게! 자동차부상치료비의 마법"],
+        ["운전자보험필수", "https://bohumofdriverl.withusdone.com", "민식이법 이후 더 중요해진 형사 합의금, 선택이 아닌 필수"],
+        ["운전자보험 자기부담금", "https://bohumofdriverm.withusdone.com", "부담은 줄이고 혜택은 높이는 스마트한 자기부담금 설정법"],
+        ["운전자보험과 자동차보험", "https://bohumofdrivern.withusdone.com", "함께 가입하면 시너지가 폭발하는 운전자의 듀얼 가드"],
+        ["자동차운전자보험", "https://bohumofdrivero.withusdone.com", "차량이 아닌 '사람'에게 집중하는 휴먼 케어 보험 서비스"],
+        ["영업용운전자보험", "https://bohumofdriverp.withusdone.com", "업무 중 사고도 걱정 없는 베테랑 운전자를 위한 특화 보험"],
+        ["운전자보험 비용", "https://bohumofdriverq.withusdone.com", "합리적인 소비를 위한 나이대별 평균 납입료 완벽 해부"],
+        ["운전자보험 변호사선임비용", "https://bohumofdriverr.withusdone.com", "경찰 조사 단계부터 나를 지켜주는 든든한 법률 조력자"],
+        ["운전병 운전자자동차보험 할인", "https://bohumofdrivers.withusdone.com", "군 경력도 자산이다! 운전병 출신을 위한 특별 할인 혜택"],
+        ["운전자보험 싼곳", "https://bohumofdrivert.withusdone.com", "최저가에 도전하는 보험료 다이어트 비법 공개"],
+        ["부부운전자보험", "https://bohumofdriveru.withusdone.com", "한 명 가격으로 두 명의 안전을! 부부 통합형 실속 플랜"],
+        ["교통사고 운전자보험", "https://bohumofdriverv.withusdone.com", "사고 후의 트라우마까지 케어하는 진정한 사후 관리"],
+        ["운전자보험 일상생활", "https://bohumofdriverw.withusdone.com", "운전대를 잡지 않을 때도 나를 보호하는 일상 배상 특약"],
+        ["운전자보험 조회", "https://bohumofdriverx.withusdone.com", "잊고 있던 내 보험, 숨겨진 보장 내역을 즉시 확인하세요"],
+        ["운전자상해보험", "https://bohumofdrivery.withusdone.com", "단순 사고를 넘어 상해 전체를 아우르는 포괄적 보장"],
+        ["운전자보험 자동차부상치료비", "https://bohumofdriverz.withusdone.com", "부상 등급별로 세밀하게 지급되는 실무형 치료비 혜택"],
+        ["운전자보험료", "https://bohumwdrivera.withusdone.com", "나의 주행 습관에 맞춘 개인화된 보험료 산출 시스템"],
+        ["운전보험", "https://bohumwdriverb.withusdone.com", "복잡한 수식어는 빼고 핵심만 담은 심플한 운전자 보호"],
+        ["운전자보험 상해", "https://bohumwdriverc.withusdone.com", "도로 위의 골절, 화상 등 다양한 상해 위험 완벽 대비"],
+        ["운전자보험 가입", "https://bohumwdriverd.withusdone.com", "모바일로 3분 만에 끝내는 간편 가입 프로세스"],
+        ["운전자보험 형사합의금", "https://bohumwdrivere.withusdone.com", "피해자와의 원만한 합의를 돕는 억 단위 지원금의 위력"],
+        ["운전자보험 벌금", "https://bohumwdriverf.withusdone.com", "스쿨존 사고 벌금 3천만원 시대, 당신의 지갑을 지킵니다"],
+        ["운전자보험 중복가입", "https://bohumwdriverg.withusdone.com", "두 번 가입하면 두 번 받을까? 중복 가입의 모든 실체"],
+        ["운전자보험 특약", "https://bohumwdriverh.withusdone.com", "보장의 질을 결정하는 알짜배기 특약 골라 담기"],
+        ["운전자보험 변경", "https://bohumwdriveri.withusdone.com", "트렌드에 뒤처진 옛날 보험, 최신 보장으로 리모델링"],
+        ["운전자보험 음주운전", "https://bohumwdriverj.withusdone.com", "주의! 절대 보장되지 않는 중대 과실 항목 체크리스트"],
+        ["운전자보험 필요성", "https://bohumwdriverk.withusdone.com", "왜 베테랑 운전자들도 운전자보험은 꼭 챙기는가?"],
+        ["다이렉트 운전자보험 비교", "https://bohumwdriverl.withusdone.com", "손 안에서 끝내는 메이저 보험사 다이렉트 견적 비교"],
+        ["운전자보험 만기", "https://bohumwdriverm.withusdone.com", "환급금은 챙기고 보장은 연장하는 똑똑한 만기 관리"],
+        ["운전자보험 보장", "https://bohumwdrivern.withusdone.com", "사망부터 중상해까지, 당신이 누릴 수 있는 최대의 권리"],
+        ["운전자보험 확인", "https://bohumwdrivero.withusdone.com", "지금 내 보험이 민식이법 이후 개정안을 반영하고 있나?"],
+        ["운전자보험 갱신", "https://bohumwdriverp.withusdone.com", "갱신 시 보험료 폭탄 피하는 유예 기간 활용법"],
+        ["운전자보험 위로금", "https://bohumwdriverq.withusdone.com", "사고로 놀란 마음까지 달래주는 따뜻한 위로금 서비스"],
+        ["운전자보험 금액", "https://bohumwdriverr.withusdone.com", "가장 효율적인 담보 구성으로 산출한 최적의 납입 금액"],
+        ["운전자보험 대물", "https://bohumwdrivers.withusdone.com", "벌금 중에서도 대물 벌금까지 놓치지 않는 꼼꼼함"],
+        ["운전자보험 만기환급", "https://bohumwdrivert.withusdone.com", "보장은 100% 받고 낸 돈은 돌려받는 저축형의 매력"],
+        ["운전자보험 기간", "https://bohumwdriveru.withusdone.com", "80세, 100세 만기! 당신의 운전 인생 끝까지 함께합니다"],
+        ["운전자보험 추가", "https://bohumwdriverv.withusdone.com", "기존 자동차보험에 부족한 2%를 채우는 추가 특약 설계"],
+        ["운전자보험 나이", "https://bohumwdriverw.withusdone.com", "연령대별 사고 통계를 바탕으로 제안하는 맞춤형 담보"],
+        ["운전자보험 동승자", "https://bohumwdriverx.withusdone.com", "내 차에 탄 소중한 사람들도 함께 보호받는 가족 동승 특약"],
+        ["음주운전운전자보험 사고보상", "https://bohumwdrivery.withusdone.com", "사고 처리의 법적 한계와 면책 사항에 대한 심층 분석"],
+        ["가족운전자보험", "https://bohumwdriverz.withusdone.com", "우리 집 차를 운전하는 누구라도 혜택받는 통합 솔루션"],
+        ["운전자보험 자차", "https://bohumxdrivera.withusdone.com", "운전자 중심 보험에서 바라본 자차 사고 대응 프로세스"],
+        ["운전자보험 비갱신", "https://bohumxdriverb.withusdone.com", "보험료 인상 걱정 끝! 처음 가격 그대로 만기까지 유지"],
+        ["운전자보험 혜택", "https://bohumxdriverc.withusdone.com", "법률 상담 서비스부터 제휴 할인까지 누리는 프리미엄 혜택"],
+        ["운전자보험 80세만기", "https://bohumxdriverd.withusdone.com", "실버 드라이버를 위한 최적의 보장 기간과 갱신 주기"],
+        ["운전자보험 화재보험", "https://bohumxdrivere.withusdone.com", "운전 사고와 화재 위험을 동시에 잡는 융합형 안심 상품"],
+        ["초보운전보험료", "https://bohumxdriverf.withusdone.com", "실수가 잦은 초보 시절, 사고 부담을 줄여주는 저렴한 입문용"],
+        ["운전자보험 가격비교 사이트", "https://bohumxdriverg.withusdone.com", "데이터로 증명하는 가장 투명한 가격 비교 랭킹"],
+        ["운전자보험 중복", "https://bohumxdriverh.withusdone.com", "비례 보상의 원리 이해하기: 여러 개 가입 전 필독"],
+        ["20대운전자보험", "https://bohumxdriveri.withusdone.com", "사회 초년생의 첫 차, 가장 합리적으로 시작하는 방법"],
+        ["누구나운전보험", "https://bohumxdriverj.withusdone.com", "지정 운전자가 아니어도 안심하고 핸들을 잡는 자유"],
+        ["운전자보험 갱신형", "https://bohumxdriverk.withusdone.com", "초기 비용 부담을 획기적으로 낮춘 실속파의 선택"],
+        ["운전자보험 환급형", "https://bohumxdriverl.withusdone.com", "나중에 목돈으로 돌려받는 똑똑한 재테크형 운전자 보장"],
+        ["운전자보험 합의금", "https://bohumxdriverm.withusdone.com", "형사 판결 전 공탁금 선지급으로 빠른 갈등 해결"],
+        ["운전자보험 환급금", "https://bohumxdrivern.withusdone.com", "내가 낸 보험료, 언제 얼마큼 돌려받을 수 있을까?"],
+        ["운전자보험 견적", "https://bohumxdrivero.withusdone.com", "귀찮은 전화 없이 카톡으로 받아보는 1분 간편 견적"],
+        ["운전자보험 자부치", "https://bohumxdriverp.withusdone.com", "부상 등급 14급이라도 보장! 운전자보험의 꽃, 자부치"],
+        ["운전자보험 실비", "https://bohumxdriverq.withusdone.com", "의료 실비와는 또 다른 운전자만을 위한 법적 실비 보장"],
+        ["운전자보험 영업용", "https://bohumxdriverr.withusdone.com", "화물, 택시, 배달 업무 중 발생하는 리스크 완벽 차단"],
+        ["운전자보험료 비교 계산", "https://bohumxdrivers.withusdone.com", "복잡한 계산은 AI에게 맡기세요. 실시간 최적가 산출"],
+        ["운전자보험비교견적다이렉트", "https://bohumxdrivert.withusdone.com", "중간 유통 단계를 없앤 직거래 방식의 놀라운 가격"],
+        ["운전자보험 갈아타기", "https://bohumxdriveru.withusdone.com", "더 좋은 보장, 더 낮은 가격이 있다면 주저 말고 이동!"],
+        ["운전자보험보험료", "https://bohumxdriverv.withusdone.com", "보장은 키우고 지출은 줄이는 마법의 구성 공식"],
+        ["운전자보험 담보", "https://bohumxdriverw.withusdone.com", "필수 담보와 불필요한 담보를 가려내는 선구안 키우기"],
+        ["내운전자보험", "https://bohumxdriverx.withusdone.com", "내 스마트폰 속 간편한 내 보험 관리 및 청구 서비스"],
+        ["운전자보험 가입기간", "https://bohumxdrivery.withusdone.com", "단기부터 장기까지 내 라이프스타일에 맞춘 가입 기간"],
+        ["남의차운전보험", "https://bohumxdriverz.withusdone.com", "친구 차, 렌터카 운전할 때도 단 하루만 가입하면 안심"],
+        ["운전자보험납입기간", "https://bohumndrivera.withusdone.com", "10년납, 20년납! 내 소득 수준에 맞춘 유연한 설정"],
+        ["운전자 다이렉트 보험", "https://bohumndriverb.withusdone.com", "클릭 몇 번으로 완성하는 가장 진화된 보험 가입 방식"],
+        ["누구나운전자보험", "https://bohumndriverc.withusdone.com", "운전자가 누구든 상관없이 차 한 대로 모두가 행복하게"],
+        ["운전자보험 설계", "https://bohumndriverd.withusdone.com", "전문 설계사의 노하우가 집약된 프리미엄 보장 구성"],
+        ["운전자보험 순위", "https://bohumndrivere.withusdone.com", "만족도 조사 1위 브랜드는 어디? 객관적 순위 공개"],
+        ["운전자보험 스쿨존", "https://bohumndriverf.withusdone.com", "어린이 보호구역 사고에 대한 특별한 법적 대비책"],
+        ["운전자보험 사망", "https://bohumndriverg.withusdone.com", "남겨진 가족을 위한 최소한의 경제적 울타리 마련"],
+        ["홈쇼핑운전자보험", "https://bohumndriverh.withusdone.com", "방송 중 혜택과 사은품까지 챙기는 홈쇼핑 가이드"],
+        ["운전자 책임보험", "https://bohumndriveri.withusdone.com", "운전자로서 가져야 할 최소한의 도리이자 필수 장치"],
+        ["운전자보험료비교견적사이트", "https://bohumndriverj.withusdone.com", "대한민국 모든 운전자보험을 한 테이블 위에 올렸습니다"],
+        ["운전자보험3만원", "https://bohumndriverk.withusdone.com", "3만원으로 완성하는 프리미엄 풀패키지 보장 플랜"],
+        ["운전자종합보험", "https://bohumndriverl.withusdone.com", "상해, 법률, 배상책임을 하나로 묶은 올인원 시스템"],
+        ["운전자보험 일반상해", "https://bohumndriverm.withusdone.com", "차 안팎을 가리지 않는 강력한 상해 위로금 보장"],
+        ["운전자보험 만원", "https://bohumndrivern.withusdone.com", "단돈 만원으로 시작하는 실속파 드라이버의 필수템"],
+        ["운전자보험 일상배상", "https://bohumndrivero.withusdone.com", "길 가다 남의 물건을 깨뜨려도 보장해주는 든든한 특약"],
+        ["운전자보험 가입확인", "https://bohumndriverp.withusdone.com", "내가 제대로 가입했나? 30초면 끝나는 보장 진단"],
+        ["환급형운전자보험", "https://bohumndriverq.withusdone.com", "소멸되는 보험료가 아깝다면? 원금 회수형으로 가입"],
+        ["운전자보험계산", "https://bohumndriverr.withusdone.com", "성별, 직업, 차종에 따른 정밀 보험료 시뮬레이션"],
+        ["운전자보험 종류", "https://bohumndrivers.withusdone.com", "정기형부터 저축형까지, 나에게 맞는 보험 타입 찾기"],
+        ["운전자보험 가입연령", "https://bohumndrivert.withusdone.com", "18세부터 80세까지, 연령별 가입 가능 여부 총정리"],
+        ["운전자보험 1년", "https://bohumndriveru.withusdone.com", "부담 없는 1년 만기형으로 매년 트렌드에 맞게 갱신"],
+        ["영업용운전자보험비교", "https://bohumndriverv.withusdone.com", "수익을 지키는 가장 확실한 방법, 영업용 보험 비교"],
+        ["운전자보험 저렴한곳", "https://bohumndriverw.withusdone.com", "광고비 거품 걷어내고 순수 보장으로 승부하는 알짜 사이트"],
+        ["운전자보험 평균 가격", "https://bohumndriverx.withusdone.com", "남들은 얼마 낼까? 전국 평균 데이터와 내 보험료 비교"]
+    ];
+
+    const categories = [
+        "🔥 2025 강력 추천: 인기 운전자보험",
+        "⚖️ 법적 분쟁 해결: 변호사 및 합의금",
+        "🚑 사고 케어: 부상치료비 & 상해 보장",
+        "💰 실속파 드라이버: 가격 및 다이렉트 비교",
+        "🚛 특수 운전 솔루션: 영업용 & 가족형",
+        "💡 스마트 가이드: 가입 꿀팁 및 주의사항"
+    ];
+
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    function generatePage() {
+        const shuffledLinks = shuffle([...rawData]).slice(0, 75); // 75개 무작위 추출
+        const shuffledCategories = shuffle([...categories]);
+        const mainContent = document.getElementById('mainContent');
+
+        shuffledCategories.forEach((cat, idx) => {
+            const card = document.createElement('div');
+            card.className = 'category-card';
+            
+            const h2 = document.createElement('h2');
+            h2.innerText = cat;
+            card.appendChild(h2);
+
+            const list = document.createElement('div');
+            list.className = 'link-list';
+
+            // 각 카테고리에 약 12~13개씩 배분
+            const startIdx = Math.floor(idx * (shuffledLinks.length / shuffledCategories.length));
+            const endIdx = Math.floor((idx + 1) * (shuffledLinks.length / shuffledCategories.length));
+            const currentLinks = shuffledLinks.slice(startIdx, endIdx);
+
+            currentLinks.forEach(item => {
+                const a = document.createElement('a');
+                a.href = item[1];
+                a.target = "_blank";
+                a.className = "insurance-item";
+                a.innerHTML = `
+                    <span class="item-title">${item[0]}</span>
+                    <span class="item-desc">${item[2]}</span>
+                `;
+                list.appendChild(a);
+            });
+
+            card.appendChild(list);
+            mainContent.appendChild(card);
+        });
+    }
+
+    window.onload = generatePage;
+</script>
+
+</body>
 </html>
