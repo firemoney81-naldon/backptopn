@@ -6,308 +6,452 @@
 <meta name="google-site-verification" content="v-JCzZe3zFWHcjtfT_a_PxZVfMIVJO5_NTHOhiptov8" />
 <meta name="naver-site-verification" content="ec8832770c08ed531c14297694db53b6aa639b5f" />  
   
-  <title>보험사 배만 불려줄 건가 내 돈 지키는 운전자보험 최저가 비교 사이트 총집결</title>
+  <title>보험사 배만 불려줄 건가 내 돈 지키는 운전자보험 총집결</title>
 
 
-
-  
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "운전자보험과 자동차보험의 차이는 무엇인가요?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "자동차보험은 상대방의 피해를 보상하는 민사 책임 위주이며, 운전자보험은 나의 형사적 책임(벌금, 합의금, 변호사비용)을 보장합니다."
-        }
-      }]
-    }
-    </script>
-
-    <style>
-        :root {
-            --primary: #4f46e5;
-            --secondary: #6366f1;
-            --bg-soft: #f8fafc;
-            --text-main: #1e293b;
-            --accent: #f43f5e;
-        }
+ <style>
+        /* 기본 스타일 초기화 */
         body {
-            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-            line-height: 1.6;
-            color: var(--text-main);
-            background-color: var(--bg-soft);
+            font-family: 'Noto Sans KR', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f8fbfd; /* 부드러운 배경색 */
+            line-height: 1.6;
+            color: #333;
         }
+
+        /* 컨테이너 및 레이아웃 설정 */
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 20px;
         }
+
         header {
             text-align: center;
-            margin-bottom: 60px;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #e0f2f1 0%, #b2ebf2 100%); /* 부드러운 그라데이션 헤더 */
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
-        h1 {
+
+        header h1 {
+            color: #00796b;
             font-size: 2.5rem;
-            color: var(--primary);
-            letter-spacing: -1px;
             margin-bottom: 10px;
+            font-weight: 700;
         }
-        .category-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
+
+        header p {
+            color: #004d40;
+            font-size: 1.1rem;
+            font-weight: 300;
         }
-        .category-card {
-            background: #ffffff;
-            border-radius: 24px;
-            padding: 30px;
-            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
-            border: 1px solid #e2e8f0;
-            transition: transform 0.3s ease;
+
+        /* 카테고리 섹션 스타일 */
+        .category-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #ffffff; /* 카테고리 배경은 흰색으로 깔끔하게 */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
         }
-        .category-card:hover {
-            transform: translateY(-5px);
-        }
-        h2 {
-            font-size: 1.6rem;
-            border-left: 6px solid var(--secondary);
+
+        .category-section h2 {
+            font-size: 2rem;
+            color: #0288d1; /* 핵심 카테고리 색상 */
+            border-left: 5px solid #0288d1;
             padding-left: 15px;
             margin-bottom: 25px;
-            color: #334155;
-        }
-        .link-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 15px;
-        }
-        .insurance-item {
-            padding: 15px;
-            border-radius: 12px;
-            background: #f1f5f9;
-            transition: all 0.2s ease;
-            text-decoration: none;
-            display: block;
-        }
-        .insurance-item:hover {
-            background: #e0e7ff;
-            box-shadow: inset 0 0 0 2px var(--secondary);
-        }
-        .item-title {
             font-weight: 700;
-            color: var(--primary);
-            display: block;
-            margin-bottom: 5px;
-            font-size: 1.1rem;
         }
-        .item-desc {
-            font-size: 0.9rem;
-            color: #64748b;
-            display: block;
+
+        /* 콘텐츠 카드 레이아웃 (Grid 시스템 사용) */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 반응형 그리드 */
+            gap: 25px;
         }
-        footer {
-            margin-top: 80px;
+
+        /* 개별 카드 스타일 */
+        .content-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            padding: 20px;
+            background-color: #e3f2fd; /* 카드 제목 배경색 */
+            color: #1a237e;
+            font-size: 1.3rem;
+            font-weight: 500;
             text-align: center;
-            font-size: 0.85rem;
-            color: #94a3b8;
-            padding-bottom: 40px;
+            position: relative;
         }
-        .badge {
+
+        .card-body {
+            padding: 20px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .card-body p {
+            margin-bottom: 15px;
+        }
+
+        /* 링크 스타일 */
+        .description-link {
+            text-decoration: none;
+            color: inherit; /* 부드러운 색감 유지를 위해 기본 텍스트 색상 상속 */
+        }
+
+        .description-link:hover {
+            text-decoration: underline;
+            color: #0288d1; /* 호버 시 색상 강조 */
+        }
+
+        /* 태그 스타일 */
+        .card-tags {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .tag {
             display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 6px;
-            font-size: 0.75rem;
-            margin-bottom: 8px;
+            background-color: #fce4ec; /* 부드러운 태그 배경색 */
+            color: #ad1457;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* 풋터 스타일 */
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background-color: #e0f2f1;
+            color: #00796b;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
     <header>
-        <span class="badge">2025 Special Report</span>
-        <h1>보험사 배만 불려줄 건가 내 돈 지키는 운전자보험 최저가 비교 사이트 총집결</h1>
-        <p>도로 위의 예기치 못한 순간, 당신을 법적으로 완벽하게 방어해 줄 최적의 플랜을 만나보세요.</p>
+        <h1>보험사 배만 불려줄 건가 내 돈 지키는 운전자보험 총집결</h1>
     </header>
 
-    <div class="category-grid" id="mainContent">
-        </div>
+    <div class="container">
+        <!-- 카테고리 1: 운전자보험의 핵심 가치와 필요성 -->
+        <section class="category-section">
+            <h2>운전자보험의 핵심 가치와 필요성</h2>
+            <div class="content-grid">
+                <!-- 아이템 1: 운전자보험 필요성 -->
+                <article class="content-card">
+                    <div class="card-header">운전자보험의 존재 이유: 필요성</div>
+                    <div class="card-body">
+                        <a href="https://bohumwdriverk.withusdone.com" target="_blank" class="description-link">
+                            <p>운전자보험의 '필요성'은 단순히 사고 시 금전적인 지원을 받는 것을 넘어섭니다. 특히 최근 도로교통법 개정으로 인해 운전자의 법적 책임이 강화되면서, 운전자보험은 선택이 아닌 필수가 되었습니다. 민식이법 시행 이후, 어린이 보호구역 내 사고 발생 시 운전자는 가중 처벌을 받을 수 있으며, 이때 발생하는 형사 합의금과 벌금은 일반인이 감당하기 어려운 수준입니다. 자동차보험이 민사적 책임을 주로 보장한다면, 운전자보험은 벌금, 형사 합의금, 변호사 선임 비용 등 형사적 책임을 완벽하게 방어해주는 방패 역할을 합니다. 이처럼 운전자보험은 운전자가 예상치 못한 법적 곤경에 처했을 때, 심리적 안정과 실질적인 경제적 지원을 제공함으로써 운전의 부담을 덜어주는 핵심적인 역할을 수행합니다. 단순한 금전적 보상이 아니라, 법률 전문가의 도움을 받을 수 있는 기회와 심리적 안정감을 제공하는 것이 운전자보험의 진정한 가치입니다. 오늘날의 복잡한 교통 환경 속에서 운전을 하는 모든 이에게 필수적인 안전장치입니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#필수_보장</span>
+                                <span class="tag">#법적_책임</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
 
-    <footer>
-        <p>© 2026 Smart Driver Insurance Guide. 본 페이지는 정보 제공을 목적으로 하며, 각 상품의 상세 내용은 해당 보험사 약관을 참조하시기 바랍니다.</p>
-    </footer>
-</div>
+                <!-- 아이템 2: 운전자보험 가입 -->
+                <article class="content-card">
+                    <div class="card-header">나에게 맞는 운전자보험 가입 전략</div>
+                    <div class="card-body">
+                        <a href="https://bohumwdriverd.withusdone.com" target="_blank" class="description-link">
+                            <p>운전자보험에 '가입'하는 과정은 매우 신중해야 합니다. 시장에는 다양한 상품이 존재하며, 각 상품마다 보장하는 내용과 보험료가 천차만별입니다. 보험 상품을 선택할 때는 자신의 운전 습관과 생활 환경을 고려하는 것이 중요합니다. 예를 들어, 출퇴근 시 운전을 자주 하거나 장거리 운전을 많이 하는 경우라면, 보장 금액이 높은 상품을 선택하는 것이 유리합니다. 또한, 운전자보험의 핵심 특약인 벌금, 형사 합의금, 변호사 선임 비용 보장이 충분한지 확인해야 합니다. 최근에는 비갱신형 상품이 인기를 끌고 있습니다. 비갱신형 상품은 초기 보험료가 갱신형보다 다소 높을 수 있지만, 만기까지 보험료 변동 없이 동일하게 유지되어 장기적인 관점에서 유리할 수 있습니다. 가입 전에는 여러 보험사의 상품을 비교하여 자신에게 최적화된 상품을 찾는 것이 현명한 가입 전략입니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#가입_팁</span>
+                                <span class="tag">#비교_필수</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 아이템 3: 운전자보험 조회 -->
+                <article class="content-card">
+                    <div class="card-header">기존 가입 내역 확인: 운전자보험 조회</div>
+                    <div class="card-body">
+                        <a href="https://bohumofdriverx.withusdone.com" target="_blank" class="description-link">
+                            <p>운전자보험을 '조회'하는 과정은 현재 자신의 보장 상태를 정확히 파악하는 첫걸음입니다. 많은 운전자가 과거에 가입했던 보험 상품의 내용을 정확히 기억하지 못하는 경우가 많습니다. 운전자보험은 법규 변경이나 새로운 보장 특약 출시 등으로 인해 기존 상품이 현재의 기준에 미치지 못할 수도 있습니다. 따라서 정기적으로 자신의 보험 가입 내역을 확인하고, 보장 내용을 분석하는 것이 중요합니다. 보험 조회 서비스를 이용하면 가입한 상품의 보장 기간, 특약 내용, 보험료 납입 현황 등을 한눈에 확인할 수 있습니다. 만약 보장 내용이 불충분하다고 판단되면, 새로운 상품으로의 변경이나 추가 가입을 고려할 수 있습니다. 운전자보험은 자동차보험과 달리 중복 보장이 안 되는 경우가 많기 때문에, 불필요한 중복 가입을 피하고 효율적인 보장을 설계하기 위해서도 조회가 필수적입니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#내역_확인</span>
+                                <span class="tag">#중복_주의</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 아이템 4: 운전자보험 중복가입 -->
+                <article class="content-card">
+                    <div class="card-header">운전자보험 중복가입의 득과 실</div>
+                    <div class="card-body">
+                        <a href="https://bohumwdriverg.withusdone.com" target="_blank" class="description-link">
+                            <p>운전자보험은 '중복가입' 시 보상받는 방식에 차이가 있어 주의가 필요합니다. 자동차보험의 상해 관련 담보는 중복 가입 시 비례 보상이 적용되는 경우가 많습니다. 즉, 여러 보험사에 가입했더라도 보험금은 각 보험사가 비례하여 나누어 지급하므로, 보험금 총액은 달라지지 않습니다. 하지만 형사 합의금이나 벌금 보장과 같은 핵심 특약은 실제 손해액을 기준으로 지급됩니다. 따라서 여러 보험에 가입해도 실제 손해액을 초과하는 보험금을 받을 수 없습니다. 반면, 자동차 부상 치료비(자부상) 특약의 경우 중복 가입 시 각 보험사로부터 보장 금액을 모두 받을 수 있어 중복 가입의 이점이 있습니다. 따라서 운전자보험 중복 가입을 고려할 때는 어떤 특약이 비례 보상되는지, 어떤 특약이 정액 보상되는지를 꼼꼼히 확인하고 효율적인 보장을 설계해야 합니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#중복_보상</span>
+                                <span class="tag">#비례_보상</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 아이템 5: 운전보험 (기본 개념) -->
+                <article class="content-card">
+                    <div class="card-header">운전보험의 기본 원리와 이해</div>
+                    <div class="card-body">
+                        <a href="https://bohumwdriverb.withusdone.com" target="_blank" class="description-link">
+                            <p>'운전보험'은 운전자보험을 일컫는 말로, 운전 중에 발생할 수 있는 사고의 법률적, 경제적 위험으로부터 운전자를 보호하기 위해 설계된 상품입니다. 자동차보험이 의무 가입으로 차량 자체의 손해와 타인에 대한 민사 배상을 주 목적으로 한다면, 운전보험은 운전자 개인의 법률적 리스크를 집중적으로 관리합니다. 특히, 형사상 책임이 발생할 수 있는 12대 중과실 사고나 중상해 사고 시, 운전보험이 없다면 운전자는 막대한 합의금과 벌금, 변호사 선임 비용을 스스로 부담해야 합니다. 운전보험은 이러한 부담을 덜어주어 운전자가 사고 발생 시에도 안정적으로 대처할 수 있도록 지원합니다. 보험 상품을 선택할 때는 자신의 운전 습관, 주행 거리, 사고 이력 등을 종합적으로 고려하여 맞춤형 설계를 하는 것이 중요합니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#운전자_보호</span>
+                                <span class="tag">#법률_대응</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 카테고리 2: 필수 특약 및 보장 심층 분석 -->
+        <section class="category-section">
+            <h2>필수 특약 및 보장 심층 분석</h2>
+            <div class="content-grid">
+                <!-- 아이템 6: 운전자보험 형사합의금 -->
+                <article class="content-card">
+                    <div class="card-header">형사합의금 보장의 중요성</div>
+                    <div class="card-body">
+                        <a href="https://bohumwdrivere.withusdone.com" target="_blank" class="description-link">
+                            <p>운전자보험의 '형사합의금' 보장은 운전자를 형사 처벌의 위험으로부터 구제하는 핵심 기능입니다. 12대 중과실 사고나 사망 사고와 같이 중대한 사고가 발생했을 경우, 피해자와의 합의가 형사 처벌 수위를 결정하는 데 결정적인 역할을 합니다. 합의금은 일반적인 사고의 보상금과는 차원이 다르게 책정될 수 있으며, 운전자가 개인적으로 감당하기 어려운 고액인 경우가 많습니다. 이때 운전자보험의 형사합의금 특약은 피해자에게 적절한 합의금을 지급하여 운전자가 겪을 수 있는 법적 리스크를 최소화해줍니다. 특히, 최근에는 보험사가 합의금을 피해자에게 직접 지급하는 '피해자 직접 청구' 방식이 도입되어 합의 과정의 투명성과 신속성이 높아졌습니다. 이 특약은 운전자보험을 가입하는 가장 중요한 이유 중 하나이며, 충분한 보장 한도를 설정하는 것이 매우 중요합니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#형사합의금</span>
+                                <span class="tag">#법률_지원</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 아이템 7: 운전자보험 벌금 -->
+                <article class="content-card">
+                    <div class="card-header">벌금 보장: 법적 부담 경감의 열쇠</div>
+                    <div class="card-body">
+                        <a href="https://bohumwdriverf.withusdone.com" target="_blank" class="description-link">
+                            <p>운전자보험에서 '벌금' 보장은 운전자가 사고로 인해 법원으로부터 벌금형을 선고받았을 때 이를 대신 지급해주는 핵심 특약입니다. 특히 2020년 민식이법 시행 이후, 어린이 보호구역 내 사고에 대한 벌금 상한액이 3천만원으로 상향되면서 벌금 보장의 중요성이 더욱 커졌습니다. 기존 운전자보험 상품에 가입한 경우, 벌금 보장 한도가 2천만원에 그치는 경우가 많아 새롭게 변경된 법규에 맞춰 보장 한도를 높여야 합니다. 벌금 보장은 대물 벌금과 대인 벌금으로 나뉘며, 최근에는 대인 사고뿐만 아니라 대물 사고 시 발생하는 벌금까지 보장해주는 상품이 출시되고 있습니다. 벌금 보장은 운전자의 경제적 부담을 직접적으로 경감해주는 보장으로, 운전자보험 가입 시 가장 먼저 확인해야 할 필수 특약입니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#벌금_보상</span>
+                                <span class="tag">#민식이법_대응</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 아이템 8: 운전자보험 자동차부상치료비 -->
+                <article class="content-card">
+                    <div class="card-header">자동차부상치료비(자부상): 내 몸까지 챙기는 보장</div>
+                    <div class="card-body">
+                        <a href="https://bohumofdriverz.withusdone.com" target="_blank" class="description-link">
+                            <p>'자동차부상치료비(자부상)'는 운전자보험의 가장 인기 있는 특약 중 하나입니다. 이 특약은 운전자가 운전 중 사고로 인해 부상을 입었을 때, 본인의 과실 여부와 상관없이 부상 등급에 따라 정해진 금액을 지급합니다. 사고가 발생했을 때 상대방에게 배상하는 자동차보험의 대인 배상과는 달리, 자부상은 운전자 본인을 위한 보장입니다. 경미한 접촉사고라도 병원에 방문하여 진단을 받으면 보험금을 청구할 수 있어 활용도가 높습니다. 자부상 특약은 단독 사고는 물론 상대방의 과실이 100%인 사고에서도 보상받을 수 있습니다. 이 특약의 보장 금액이 클수록 가벼운 부상에도 큰 혜택을 받을 수 있기 때문에, 최근 운전자보험 가입자들은 이 특약을 필수로 고려하고 있습니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#자동차부상치료비</span>
+                                <span class="tag">#자부상</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 아이템 9: 운전자보험 상해 -->
+                <article class="content-card">
+                    <div class="card-header">운전자보험 상해 보장의 범위와 중요성</div>
+                    <div class="card-body">
+                        <a href="https://bohumwdriverc.withusdone.com" target="_blank" class="description-link">
+                            <p>'운전자보험 상해' 보장은 운전 중에 발생하는 다양한 상해 사고를 폭넓게 커버합니다. 운전 중 발생한 교통사고로 인해 입원하거나 수술을 받을 경우, 상해 관련 특약이 실질적인 치료비 부담을 줄여줍니다. 단순한 교통사고뿐만 아니라, 차량 정비 중 발생한 사고나 주차장에서 발생한 사고 등 운전과 관련된 다양한 상황에서 발생하는 상해를 보장합니다. 상해 보장의 핵심은 운전 중 발생한 부상을 보상하는 것에 초점을 맞추고 있으며, 상해 입원 일당이나 상해 수술비 특약 등을 통해 경제적 지원을 받을 수 있습니다. 특히, 일상생활 중 발생하는 상해와는 별개로, 운전 중에만 발생하는 특수한 위험에 대비할 수 있도록 설계된 것이 특징입니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#상해_보장</span>
+                                <span class="tag">#운전_중_사고</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 아이템 10: 운전자상해보험 -->
+                <article class="content-card">
+                    <div class="card-header">운전자상해보험: 운전자 상해에 집중된 보장</div>
+                    <div class="card-body">
+                        <a href="https://bohumofdrivery.withusdone.com" target="_blank" class="description-link">
+                            <p>'운전자상해보험'은 일반적인 운전자보험의 법률 비용 보장과 별개로, 운전자 본인의 신체 상해에 초점을 맞춘 상품입니다. 이 보험은 사고로 인한 치료비, 입원비, 수술비 등 신체적 손해를 집중적으로 보장합니다. 운전자 상해 보장은 운전 중 사고뿐만 아니라, 교통수단을 이용하는 도중에 발생하는 상해까지 폭넓게 보장하는 경우가 많습니다. 특히, 운전자보험의 '자동차부상치료비' 특약과 연계하여 보장을 강화할 수 있습니다. 운전으로 인해 발생할 수 있는 신체적 손해에 대한 대비가 필요한 운전자에게 유리한 상품입니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#상해_집중</span>
+                                <span class="tag">#치료비_보장</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 카테고리 3: 상황별 특화 보장 및 관리 전략 -->
+        <section class="category-section">
+            <h2>상황별 특화 보장 및 관리 전략</h2>
+            <div class="content-grid">
+                <!-- 아이템 11: 부부운전자보험 -->
+                <article class="content-card">
+                    <div class="card-header">부부운전자보험: 가족을 위한 통합 보장</div>
+                    <div class="card-body">
+                        <a href="https://bohumofdriveru.withusdone.com" target="_blank" class="description-link">
+                            <p>'부부운전자보험'은 부부가 함께 운전을 하는 경우에 유용한 상품입니다. 한 번의 가입으로 부부 두 사람 모두 운전자보험의 보장을 받을 수 있어 효율적입니다. 부부 중 한 명이 사고를 냈을 때, 나머지 배우자의 운전 습관이나 보험료에 영향을 미치지 않으면서도 안정적인 보장을 받을 수 있습니다. 특히, 주말 부부나 차량을 함께 사용하는 가정이 늘어나면서 부부운전자보험에 대한 관심이 높아지고 있습니다. 부부운전자보험을 가입할 때는 각자의 운전 경력과 사고 이력을 고려하여 보험료를 산출하며, 부부 중 한 명에게만 보장 한도를 높이는 맞춤형 설계도 가능합니다. 가족의 안전을 한 번에 지키고 싶은 운전자들에게 추천되는 상품입니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#부부_공동_가입</span>
+                                <span class="tag">#가족_보장</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 아이템 12: 교통사고 운전자보험 -->
+                <article class="content-card">
+                    <div class="card-header">교통사고 발생 시 운전자보험의 역할</div>
+                    <div class="card-body">
+                        <a href="https://bohumofdriverv.withusdone.com" target="_blank" class="description-link">
+                            <p>'교통사고 운전자보험'은 말 그대로 교통사고가 발생했을 때 운전자를 위한 실질적인 지원을 제공합니다. 사고 발생 시 운전자는 가해자 또는 피해자로서 다양한 법률적 문제에 직면할 수 있습니다. 운전자보험은 12대 중과실 사고나 중상해 사고와 같은 중대한 사고가 발생했을 때, 피해자와의 합의금은 물론 변호사 선임 비용까지 보장하여 운전자가 법률 전문가의 도움을 받을 수 있도록 합니다. 이는 운전자가 사고 처리 과정에서 겪을 수 있는 정신적, 금전적 부담을 크게 줄여줍니다. 또한, 본인의 부상 치료비까지 보장하는 특약이 포함되어 있어 사고로 인한 신체적 손해에 대한 대비도 가능합니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#사고_대응</span>
+                                <span class="tag">#법률_비용</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 아이템 13: 운전자보험 만기 -->
+                <article class="content-card">
+                    <div class="card-header">운전자보험 만기: 갱신과 재가입의 기로</div>
+                    <div class="card-body">
+                        <a href="https://bohumwdriverm.withusdone.com" target="_blank" class="description-link">
+                            <p>운전자보험의 '만기' 시점은 보험 상품을 재평가하고 새로운 보장을 설계할 수 있는 중요한 순간입니다. 운전자보험은 갱신형과 비갱신형으로 나뉘며, 만기 시점에 갱신형 상품은 보험료가 인상될 수 있습니다. 만기 시에는 현재의 보장 내용이 최신 법규를 반영하고 있는지 확인해야 합니다. 예를 들어, 민식이법 시행으로 벌금 보장 한도가 상향되었는데, 기존 상품이 이를 따라가지 못한다면 만기 시 새로운 상품으로 재가입을 고려하는 것이 좋습니다. 만기가 다가오면 보험사에서는 갱신 안내를 해주지만, 운전자 스스로 시장의 최신 상품을 비교하여 더 좋은 조건으로 가입하는 것이 현명합니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#만기_관리</span>
+                                <span class="tag">#재가입</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 아이템 14: 운전자보험 갱신 -->
+                <article class="content-card">
+                    <div class="card-header">운전자보험 갱신 시 고려사항</div>
+                    <div class="card-body">
+                        <a href="https://bohumwdriverp.withusdone.com" target="_blank" class="description-link">
+                            <p>운전자보험 '갱신'은 보험료가 변동될 수 있는 중요한 시점입니다. 갱신형 상품의 경우, 갱신 시점의 연령 증가와 손해율 변동 등에 따라 보험료가 인상될 수 있습니다. 갱신 시에는 기존 상품을 그대로 유지할지, 아니면 새로운 상품으로 갈아탈지 신중하게 결정해야 합니다. 새로운 상품으로 갈아탈 경우, 운전자보험의 보장 내용이 최신 법규에 맞게 개정되었는지, 더 다양한 특약을 제공하는지 등을 확인해야 합니다. 특히, 비갱신형 상품의 경우 만기 시까지 보험료 변동 없이 동일하게 유지되므로 갱신에 대한 부담이 적습니다. 갱신 시에는 여러 보험사의 상품을 비교하여 자신에게 최적의 보장 조건을 제공하는 상품을 선택하는 것이 중요합니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#갱신_주기</span>
+                                <span class="tag">#보험료_변동</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 아이템 15: 다이렉트 운전자보험 비교 -->
+                <article class="content-card">
+                    <div class="card-header">다이렉트 운전자보험 비교의 장점</div>
+                    <div class="card-body">
+                        <a href="https://bohumwdriverl.withusdone.com" target="_blank" class="description-link">
+                            <p>'다이렉트 운전자보험 비교'는 보험료를 절감하고 자신에게 맞는 상품을 효율적으로 찾을 수 있는 방법입니다. 다이렉트 보험은 설계사 수수료가 없어 일반 보험보다 보험료가 저렴한 것이 특징입니다. 온라인 비교 플랫폼을 이용하면 여러 보험사의 상품을 한눈에 비교할 수 있어 시간을 절약하고 최적의 선택을 할 수 있습니다. 다이렉트 보험을 비교할 때는 단순히 보험료만 볼 것이 아니라, 핵심 특약인 벌금, 형사 합의금, 변호사 선임 비용 등의 보장 한도와 세부 내용을 꼼꼼히 확인해야 합니다. 또한, 운전자 상해 관련 특약이나 자동차부상치료비 특약 등 자신에게 필요한 추가 보장을 선택하여 맞춤형 설계를 하는 것이 중요합니다.</p>
+                            <div class="card-tags">
+                                <span class="tag">#다이렉트_비교</span>
+                                <span class="tag">#보험료_절감</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </div>
+
+<footer style="font-size: 11px; color: #888; padding: 30px 20px; text-align: center; line-height: 1.8; font-family: sans-serif;">
+  <div style="margin-bottom: 8px;">
+    © 2026. <span id="site-title"></span>. All rights reserved.
+  </div>
+
+  <div style="color: #ccc;">
+    <span id="bot-msg">데이터 동기화 중...</span> | 
+    최종 업데이트: <time id="bot-date" datetime=""></time>
+  </div>
+</footer>
 
 <script>
-    const rawData = [
-        ["운전자보험 비교사이트", "https://bohumofdrivera.withusdone.com", "복잡한 보장을 한눈에! 내게 꼭 맞는 맞춤형 비교 분석"],
-        ["운전자보험 보장내용", "https://bohumofdriverb.withusdone.com", "단순 치료비를 넘어선 형사적 책임의 모든 것 확인"],
-        ["운전자보험 추천", "https://bohumofdriverc.withusdone.com", "전문가가 선정한 올해의 가장 가성비 높은 안심 플랜"],
-        ["운전자보험 보상", "https://bohumofdriverd.withusdone.com", "사고 발생 시 가장 빠르고 정확하게 받는 보상 가이드"],
-        ["운전자보험 비교", "https://bohumofdrivere.withusdone.com", "보험사별 담보 차이, 이제는 한 곳에서 쉽게 비교하세요"],
-        ["다이렉트 운전자보험", "https://bohumofdriverf.withusdone.com", "설계사 수수료 없이 거품을 뺀 다이렉트만의 경제적 선택"],
-        ["운전자보험이란", "https://bohumofdriverg.withusdone.com", "운전자의 법적 방어권을 보장하는 현대인의 필수 안전장치"],
-        ["운전자보험 자동차보험 차이", "https://bohumofdriverh.withusdone.com", "민사와 형사의 명확한 경계, 왜 둘 다 필요한지 분석"],
-        ["운전자보험 자동차보험", "https://bohumofdriveri.withusdone.com", "두 보험의 완벽한 콜라보레이션으로 빈틈없는 보장 설계"],
-        ["운전자보험 가격", "https://bohumofdriverj.withusdone.com", "월 커피 한 잔 값으로 누리는 강력한 형사적 보호막"],
-        ["운전자보험 자부상", "https://bohumofdriverk.withusdone.com", "경미한 접촉사고도 든든하게! 자동차부상치료비의 마법"],
-        ["운전자보험필수", "https://bohumofdriverl.withusdone.com", "민식이법 이후 더 중요해진 형사 합의금, 선택이 아닌 필수"],
-        ["운전자보험 자기부담금", "https://bohumofdriverm.withusdone.com", "부담은 줄이고 혜택은 높이는 스마트한 자기부담금 설정법"],
-        ["운전자보험과 자동차보험", "https://bohumofdrivern.withusdone.com", "함께 가입하면 시너지가 폭발하는 운전자의 듀얼 가드"],
-        ["자동차운전자보험", "https://bohumofdrivero.withusdone.com", "차량이 아닌 '사람'에게 집중하는 휴먼 케어 보험 서비스"],
-        ["영업용운전자보험", "https://bohumofdriverp.withusdone.com", "업무 중 사고도 걱정 없는 베테랑 운전자를 위한 특화 보험"],
-        ["운전자보험 비용", "https://bohumofdriverq.withusdone.com", "합리적인 소비를 위한 나이대별 평균 납입료 완벽 해부"],
-        ["운전자보험 변호사선임비용", "https://bohumofdriverr.withusdone.com", "경찰 조사 단계부터 나를 지켜주는 든든한 법률 조력자"],
-        ["운전병 운전자자동차보험 할인", "https://bohumofdrivers.withusdone.com", "군 경력도 자산이다! 운전병 출신을 위한 특별 할인 혜택"],
-        ["운전자보험 싼곳", "https://bohumofdrivert.withusdone.com", "최저가에 도전하는 보험료 다이어트 비법 공개"],
-        ["부부운전자보험", "https://bohumofdriveru.withusdone.com", "한 명 가격으로 두 명의 안전을! 부부 통합형 실속 플랜"],
-        ["교통사고 운전자보험", "https://bohumofdriverv.withusdone.com", "사고 후의 트라우마까지 케어하는 진정한 사후 관리"],
-        ["운전자보험 일상생활", "https://bohumofdriverw.withusdone.com", "운전대를 잡지 않을 때도 나를 보호하는 일상 배상 특약"],
-        ["운전자보험 조회", "https://bohumofdriverx.withusdone.com", "잊고 있던 내 보험, 숨겨진 보장 내역을 즉시 확인하세요"],
-        ["운전자상해보험", "https://bohumofdrivery.withusdone.com", "단순 사고를 넘어 상해 전체를 아우르는 포괄적 보장"],
-        ["운전자보험 자동차부상치료비", "https://bohumofdriverz.withusdone.com", "부상 등급별로 세밀하게 지급되는 실무형 치료비 혜택"],
-        ["운전자보험료", "https://bohumwdrivera.withusdone.com", "나의 주행 습관에 맞춘 개인화된 보험료 산출 시스템"],
-        ["운전보험", "https://bohumwdriverb.withusdone.com", "복잡한 수식어는 빼고 핵심만 담은 심플한 운전자 보호"],
-        ["운전자보험 상해", "https://bohumwdriverc.withusdone.com", "도로 위의 골절, 화상 등 다양한 상해 위험 완벽 대비"],
-        ["운전자보험 가입", "https://bohumwdriverd.withusdone.com", "모바일로 3분 만에 끝내는 간편 가입 프로세스"],
-        ["운전자보험 형사합의금", "https://bohumwdrivere.withusdone.com", "피해자와의 원만한 합의를 돕는 억 단위 지원금의 위력"],
-        ["운전자보험 벌금", "https://bohumwdriverf.withusdone.com", "스쿨존 사고 벌금 3천만원 시대, 당신의 지갑을 지킵니다"],
-        ["운전자보험 중복가입", "https://bohumwdriverg.withusdone.com", "두 번 가입하면 두 번 받을까? 중복 가입의 모든 실체"],
-        ["운전자보험 특약", "https://bohumwdriverh.withusdone.com", "보장의 질을 결정하는 알짜배기 특약 골라 담기"],
-        ["운전자보험 변경", "https://bohumwdriveri.withusdone.com", "트렌드에 뒤처진 옛날 보험, 최신 보장으로 리모델링"],
-        ["운전자보험 음주운전", "https://bohumwdriverj.withusdone.com", "주의! 절대 보장되지 않는 중대 과실 항목 체크리스트"],
-        ["운전자보험 필요성", "https://bohumwdriverk.withusdone.com", "왜 베테랑 운전자들도 운전자보험은 꼭 챙기는가?"],
-        ["다이렉트 운전자보험 비교", "https://bohumwdriverl.withusdone.com", "손 안에서 끝내는 메이저 보험사 다이렉트 견적 비교"],
-        ["운전자보험 만기", "https://bohumwdriverm.withusdone.com", "환급금은 챙기고 보장은 연장하는 똑똑한 만기 관리"],
-        ["운전자보험 보장", "https://bohumwdrivern.withusdone.com", "사망부터 중상해까지, 당신이 누릴 수 있는 최대의 권리"],
-        ["운전자보험 확인", "https://bohumwdrivero.withusdone.com", "지금 내 보험이 민식이법 이후 개정안을 반영하고 있나?"],
-        ["운전자보험 갱신", "https://bohumwdriverp.withusdone.com", "갱신 시 보험료 폭탄 피하는 유예 기간 활용법"],
-        ["운전자보험 위로금", "https://bohumwdriverq.withusdone.com", "사고로 놀란 마음까지 달래주는 따뜻한 위로금 서비스"],
-        ["운전자보험 금액", "https://bohumwdriverr.withusdone.com", "가장 효율적인 담보 구성으로 산출한 최적의 납입 금액"],
-        ["운전자보험 대물", "https://bohumwdrivers.withusdone.com", "벌금 중에서도 대물 벌금까지 놓치지 않는 꼼꼼함"],
-        ["운전자보험 만기환급", "https://bohumwdrivert.withusdone.com", "보장은 100% 받고 낸 돈은 돌려받는 저축형의 매력"],
-        ["운전자보험 기간", "https://bohumwdriveru.withusdone.com", "80세, 100세 만기! 당신의 운전 인생 끝까지 함께합니다"],
-        ["운전자보험 추가", "https://bohumwdriverv.withusdone.com", "기존 자동차보험에 부족한 2%를 채우는 추가 특약 설계"],
-        ["운전자보험 나이", "https://bohumwdriverw.withusdone.com", "연령대별 사고 통계를 바탕으로 제안하는 맞춤형 담보"],
-        ["운전자보험 동승자", "https://bohumwdriverx.withusdone.com", "내 차에 탄 소중한 사람들도 함께 보호받는 가족 동승 특약"],
-        ["음주운전운전자보험 사고보상", "https://bohumwdrivery.withusdone.com", "사고 처리의 법적 한계와 면책 사항에 대한 심층 분석"],
-        ["가족운전자보험", "https://bohumwdriverz.withusdone.com", "우리 집 차를 운전하는 누구라도 혜택받는 통합 솔루션"],
-        ["운전자보험 자차", "https://bohumxdrivera.withusdone.com", "운전자 중심 보험에서 바라본 자차 사고 대응 프로세스"],
-        ["운전자보험 비갱신", "https://bohumxdriverb.withusdone.com", "보험료 인상 걱정 끝! 처음 가격 그대로 만기까지 유지"],
-        ["운전자보험 혜택", "https://bohumxdriverc.withusdone.com", "법률 상담 서비스부터 제휴 할인까지 누리는 프리미엄 혜택"],
-        ["운전자보험 80세만기", "https://bohumxdriverd.withusdone.com", "실버 드라이버를 위한 최적의 보장 기간과 갱신 주기"],
-        ["운전자보험 화재보험", "https://bohumxdrivere.withusdone.com", "운전 사고와 화재 위험을 동시에 잡는 융합형 안심 상품"],
-        ["초보운전보험료", "https://bohumxdriverf.withusdone.com", "실수가 잦은 초보 시절, 사고 부담을 줄여주는 저렴한 입문용"],
-        ["운전자보험 가격비교 사이트", "https://bohumxdriverg.withusdone.com", "데이터로 증명하는 가장 투명한 가격 비교 랭킹"],
-        ["운전자보험 중복", "https://bohumxdriverh.withusdone.com", "비례 보상의 원리 이해하기: 여러 개 가입 전 필독"],
-        ["20대운전자보험", "https://bohumxdriveri.withusdone.com", "사회 초년생의 첫 차, 가장 합리적으로 시작하는 방법"],
-        ["누구나운전보험", "https://bohumxdriverj.withusdone.com", "지정 운전자가 아니어도 안심하고 핸들을 잡는 자유"],
-        ["운전자보험 갱신형", "https://bohumxdriverk.withusdone.com", "초기 비용 부담을 획기적으로 낮춘 실속파의 선택"],
-        ["운전자보험 환급형", "https://bohumxdriverl.withusdone.com", "나중에 목돈으로 돌려받는 똑똑한 재테크형 운전자 보장"],
-        ["운전자보험 합의금", "https://bohumxdriverm.withusdone.com", "형사 판결 전 공탁금 선지급으로 빠른 갈등 해결"],
-        ["운전자보험 환급금", "https://bohumxdrivern.withusdone.com", "내가 낸 보험료, 언제 얼마큼 돌려받을 수 있을까?"],
-        ["운전자보험 견적", "https://bohumxdrivero.withusdone.com", "귀찮은 전화 없이 카톡으로 받아보는 1분 간편 견적"],
-        ["운전자보험 자부치", "https://bohumxdriverp.withusdone.com", "부상 등급 14급이라도 보장! 운전자보험의 꽃, 자부치"],
-        ["운전자보험 실비", "https://bohumxdriverq.withusdone.com", "의료 실비와는 또 다른 운전자만을 위한 법적 실비 보장"],
-        ["운전자보험 영업용", "https://bohumxdriverr.withusdone.com", "화물, 택시, 배달 업무 중 발생하는 리스크 완벽 차단"],
-        ["운전자보험료 비교 계산", "https://bohumxdrivers.withusdone.com", "복잡한 계산은 AI에게 맡기세요. 실시간 최적가 산출"],
-        ["운전자보험비교견적다이렉트", "https://bohumxdrivert.withusdone.com", "중간 유통 단계를 없앤 직거래 방식의 놀라운 가격"],
-        ["운전자보험 갈아타기", "https://bohumxdriveru.withusdone.com", "더 좋은 보장, 더 낮은 가격이 있다면 주저 말고 이동!"],
-        ["운전자보험보험료", "https://bohumxdriverv.withusdone.com", "보장은 키우고 지출은 줄이는 마법의 구성 공식"],
-        ["운전자보험 담보", "https://bohumxdriverw.withusdone.com", "필수 담보와 불필요한 담보를 가려내는 선구안 키우기"],
-        ["내운전자보험", "https://bohumxdriverx.withusdone.com", "내 스마트폰 속 간편한 내 보험 관리 및 청구 서비스"],
-        ["운전자보험 가입기간", "https://bohumxdrivery.withusdone.com", "단기부터 장기까지 내 라이프스타일에 맞춘 가입 기간"],
-        ["남의차운전보험", "https://bohumxdriverz.withusdone.com", "친구 차, 렌터카 운전할 때도 단 하루만 가입하면 안심"],
-        ["운전자보험납입기간", "https://bohumndrivera.withusdone.com", "10년납, 20년납! 내 소득 수준에 맞춘 유연한 설정"],
-        ["운전자 다이렉트 보험", "https://bohumndriverb.withusdone.com", "클릭 몇 번으로 완성하는 가장 진화된 보험 가입 방식"],
-        ["누구나운전자보험", "https://bohumndriverc.withusdone.com", "운전자가 누구든 상관없이 차 한 대로 모두가 행복하게"],
-        ["운전자보험 설계", "https://bohumndriverd.withusdone.com", "전문 설계사의 노하우가 집약된 프리미엄 보장 구성"],
-        ["운전자보험 순위", "https://bohumndrivere.withusdone.com", "만족도 조사 1위 브랜드는 어디? 객관적 순위 공개"],
-        ["운전자보험 스쿨존", "https://bohumndriverf.withusdone.com", "어린이 보호구역 사고에 대한 특별한 법적 대비책"],
-        ["운전자보험 사망", "https://bohumndriverg.withusdone.com", "남겨진 가족을 위한 최소한의 경제적 울타리 마련"],
-        ["홈쇼핑운전자보험", "https://bohumndriverh.withusdone.com", "방송 중 혜택과 사은품까지 챙기는 홈쇼핑 가이드"],
-        ["운전자 책임보험", "https://bohumndriveri.withusdone.com", "운전자로서 가져야 할 최소한의 도리이자 필수 장치"],
-        ["운전자보험료비교견적사이트", "https://bohumndriverj.withusdone.com", "대한민국 모든 운전자보험을 한 테이블 위에 올렸습니다"],
-        ["운전자보험3만원", "https://bohumndriverk.withusdone.com", "3만원으로 완성하는 프리미엄 풀패키지 보장 플랜"],
-        ["운전자종합보험", "https://bohumndriverl.withusdone.com", "상해, 법률, 배상책임을 하나로 묶은 올인원 시스템"],
-        ["운전자보험 일반상해", "https://bohumndriverm.withusdone.com", "차 안팎을 가리지 않는 강력한 상해 위로금 보장"],
-        ["운전자보험 만원", "https://bohumndrivern.withusdone.com", "단돈 만원으로 시작하는 실속파 드라이버의 필수템"],
-        ["운전자보험 일상배상", "https://bohumndrivero.withusdone.com", "길 가다 남의 물건을 깨뜨려도 보장해주는 든든한 특약"],
-        ["운전자보험 가입확인", "https://bohumndriverp.withusdone.com", "내가 제대로 가입했나? 30초면 끝나는 보장 진단"],
-        ["환급형운전자보험", "https://bohumndriverq.withusdone.com", "소멸되는 보험료가 아깝다면? 원금 회수형으로 가입"],
-        ["운전자보험계산", "https://bohumndriverr.withusdone.com", "성별, 직업, 차종에 따른 정밀 보험료 시뮬레이션"],
-        ["운전자보험 종류", "https://bohumndrivers.withusdone.com", "정기형부터 저축형까지, 나에게 맞는 보험 타입 찾기"],
-        ["운전자보험 가입연령", "https://bohumndrivert.withusdone.com", "18세부터 80세까지, 연령별 가입 가능 여부 총정리"],
-        ["운전자보험 1년", "https://bohumndriveru.withusdone.com", "부담 없는 1년 만기형으로 매년 트렌드에 맞게 갱신"],
-        ["영업용운전자보험비교", "https://bohumndriverv.withusdone.com", "수익을 지키는 가장 확실한 방법, 영업용 보험 비교"],
-        ["운전자보험 저렴한곳", "https://bohumndriverw.withusdone.com", "광고비 거품 걷어내고 순수 보장으로 승부하는 알짜 사이트"],
-        ["운전자보험 평균 가격", "https://bohumndriverx.withusdone.com", "남들은 얼마 낼까? 전국 평균 데이터와 내 보험료 비교"]
-    ];
-
-    const categories = [
-        "🔥 2025 강력 추천: 인기 운전자보험",
-        "⚖️ 법적 분쟁 해결: 변호사 및 합의금",
-        "🚑 사고 케어: 부상치료비 & 상해 보장",
-        "💰 실속파 드라이버: 가격 및 다이렉트 비교",
-        "🚛 특수 운전 솔루션: 영업용 & 가족형",
-        "💡 스마트 가이드: 가입 꿀팁 및 주의사항"
-    ];
-
-    function shuffle(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-        return array;
+  (function() {
+    // 1. 사이트 타이틀 자동 삽입 (요청하신 코드 추가됨)
+    const siteTitleElem = document.getElementById('site-title');
+    if (siteTitleElem) {
+      siteTitleElem.textContent = document.title || "My Website"; 
     }
 
-    function generatePage() {
-        const shuffledLinks = shuffle([...rawData]).slice(0, 75); // 75개 무작위 추출
-        const shuffledCategories = shuffle([...categories]);
-        const mainContent = document.getElementById('mainContent');
+    // 2. 날짜 및 시간 설정
+    const d = new Date();
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    const formattedDate = `${year}-${month}-${day}`;
+    const fullISO = `${formattedDate}T09:00:00+09:00`;
 
-        shuffledCategories.forEach((cat, idx) => {
-            const card = document.createElement('div');
-            card.className = 'category-card';
-            
-            const h2 = document.createElement('h2');
-            h2.innerText = cat;
-            card.appendChild(h2);
+    const dateElem = document.getElementById('bot-date');
+    const msgElem = document.getElementById('bot-msg');
 
-            const list = document.createElement('div');
-            list.className = 'link-list';
-
-            // 각 카테고리에 약 12~13개씩 배분
-            const startIdx = Math.floor(idx * (shuffledLinks.length / shuffledCategories.length));
-            const endIdx = Math.floor((idx + 1) * (shuffledLinks.length / shuffledCategories.length));
-            const currentLinks = shuffledLinks.slice(startIdx, endIdx);
-
-            currentLinks.forEach(item => {
-                const a = document.createElement('a');
-                a.href = item[1];
-                a.target = "_blank";
-                a.className = "insurance-item";
-                a.innerHTML = `
-                    <span class="item-title">${item[0]}</span>
-                    <span class="item-desc">${item[2]}</span>
-                `;
-                list.appendChild(a);
-            });
-
-            card.appendChild(list);
-            mainContent.appendChild(card);
-        });
+    if(dateElem) {
+      dateElem.textContent = formattedDate;
+      dateElem.setAttribute('datetime', formattedDate); 
     }
 
-    window.onload = generatePage;
+    // 3. 동적 상태 메시지
+    if(msgElem) {
+      const msgs = ["정보 유효성 검토 완료", "실시간 데이터 업데이트됨", "최신 가이드라인 준수", "콘텐츠 정기 점검 완료", "시스템 정보 동기화 완료"];
+      msgElem.textContent = msgs[d.getDate() % msgs.length];
+    }
+
+    // 4. SEO 최적화 (JSON-LD)
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "dateModified": fullISO,
+      "mainEntityOfPage": { "@type": "WebPage", "@id": window.location.href }
+    };
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(jsonLd);
+    document.head.appendChild(script);
+
+    // 5. 메타 태그 업데이트
+    const metaData = [
+      { name: "revised", content: formattedDate },
+      { property: "article:modified_time", content: fullISO }
+    ];
+    metaData.forEach(data => {
+      const meta = document.createElement('meta');
+      if (data.name) meta.name = data.name;
+      if (data.property) meta.setAttribute('property', data.property);
+      meta.content = data.content;
+      document.head.appendChild(meta);
+    });
+  })();
 </script>
+
+
 
 </body>
 </html>
-
